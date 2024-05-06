@@ -1,0 +1,7 @@
+- name: db configuration
+  hosts: db
+  become: yes
+  vars_files:
+  - credential.yaml
+  roles:      #insteaded of tasks will mention roles here
+  - db
