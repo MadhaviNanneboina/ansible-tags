@@ -1,7 +1,7 @@
 - name: backend configuration
   hosts: backend
   become: yes
-  vers_files:
+  vars_files:
   - credential.yaml
   roles:         #insteded of tasks we are mentioning roles here
   - backend
